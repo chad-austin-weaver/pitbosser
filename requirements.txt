@@ -1,1 +1,5 @@
 streamlit
+python-constraint
+Faker
+matplotlib
+pandas

@@ -1,0 +1,132 @@
+No solution found for test_file_0
+No solution found for test_file_1
+No solution found for test_file_2
+Solution found for test_file_3
+"{'r-roulette0': '2', 'r-baccarat0': '2', 'r-blackjack0': '2', 'r-blackjack1': '3', 'r-blackjack2': '3', 'r-blackjack3': '3', 'craps0(0)': '11', 'craps0(1)': '5', 'craps0(2)': '6', 'craps0(3)': '9', 'baccarat0': '0', 'roulette0': '1', 'blackjack0': '4', 'blackjack1': '7', 'blackjack2': '8', 'blackjack3': '10'}"
+Solution found for test_file_4
+"{'r-roulette0': '1', 'roulette0': '5', 'roulette1': '9', 'r-roulette1': '1', 'baccarat0': '4', 'baccarat1': '11', 'r-baccarat0': '1', 'r-baccarat1': '2', 'blackjack0': '3', 'blackjack1': '8', 'blackjack2': '0', 'blackjack3': '6', 'blackjack4': '7', 'r-blackjack0': '2', 'r-blackjack1': '2', 'r-blackjack2': '10', 'r-blackjack3': '10', 'r-blackjack4': '10'}"
+No solution found for test_file_5
+Solution found for test_file_6
+"{'r-roulette0': '2', 'r-baccarat0': '7', 'r-blackjack0': '2', 'r-blackjack1': '2', 'r-blackjack2': '7', 'r-blackjack3': '7', 'craps0(0)': '1', 'craps0(1)': '5', 'craps0(2)': '6', 'craps0(3)': '9', 'roulette0': '10', 'baccarat0': '11', 'blackjack0': '3', 'blackjack1': '4', 'blackjack2': '8', 'blackjack3': '0'}"
+No solution found for test_file_7
+Solution found for test_file_8
+"{'r-baccarat0': '2', 'r-roulette0': '1', 'r-blackjack0': '1', 'r-blackjack1': '1', 'r-blackjack2': '2', 'r-blackjack3': '2', 'craps0(0)': '0', 'craps0(1)': '4', 'craps0(2)': '5', 'craps0(3)': '7', 'roulette0': '11', 'baccarat0': '9', 'blackjack0': '8', 'blackjack1': '3', 'blackjack2': '6', 'blackjack3': '10'}"
+Solution found for test_file_9
+"{'r-roulette0': '0', 'r-baccarat0': '4', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '4', 'r-blackjack3': '4', 'craps0(0)': '3', 'craps0(1)': '5', 'craps0(2)': '6', 'craps0(3)': '7', 'baccarat0': '11', 'roulette0': '9', 'blackjack0': '10', 'blackjack1': '1', 'blackjack2': '8', 'blackjack3': '2'}"
+Solution found for test_file_10
+"{'r-baccarat0': '1', 'r-roulette0': '1', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '0', 'r-blackjack3': '1', 'craps0(0)': '3', 'craps0(1)': '5', 'craps0(2)': '6', 'craps0(3)': '8', 'baccarat0': '7', 'roulette0': '4', 'blackjack0': '9', 'blackjack1': '10', 'blackjack2': '11', 'blackjack3': '2'}"
+No solution found for test_file_11
+No solution found for test_file_12
+Solution found for test_file_13
+"{'r-baccarat0': '0', 'r-roulette0': '5', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '5', 'r-blackjack3': '5', 'craps0(0)': '1', 'craps0(1)': '3', 'craps0(2)': '4', 'craps0(3)': '8', 'baccarat0': '10', 'roulette0': '11', 'blackjack0': '9', 'blackjack1': '2', 'blackjack2': '6', 'blackjack3': '7'}"
+No solution found for test_file_14
+No solution found for test_file_15
+Solution found for test_file_16
+"{'baccarat0': '1', 'baccarat1': '10', 'r-baccarat0': '11', 'r-baccarat1': '11', 'roulette0': '7', 'roulette1': '0', 'r-roulette0': '11', 'r-roulette1': '2', 'blackjack0': '4', 'blackjack1': '6', 'blackjack2': '3', 'blackjack3': '5', 'blackjack4': '8', 'r-blackjack0': '2', 'r-blackjack1': '2', 'r-blackjack2': '9', 'r-blackjack3': '9', 'r-blackjack4': '9'}"
+No solution found for test_file_17
+No solution found for test_file_18
+Solution found for test_file_19
+"{'r-roulette0': '10', 'r-baccarat0': '7', 'r-blackjack0': '7', 'r-blackjack1': '7', 'r-blackjack2': '10', 'r-blackjack3': '10', 'craps0(0)': '11', 'craps0(1)': '4', 'craps0(2)': '6', 'craps0(3)': '9', 'baccarat0': '3', 'roulette0': '2', 'blackjack0': '5', 'blackjack1': '8', 'blackjack2': '0', 'blackjack3': '1'}"
+No solution found for test_file_20
+No solution found for test_file_21
+No solution found for test_file_22
+Solution found for test_file_23
+"{'r-baccarat0': '4', 'r-roulette0': '5', 'r-blackjack0': '4', 'r-blackjack1': '4', 'r-blackjack2': '5', 'r-blackjack3': '5', 'craps0(0)': '0', 'craps0(1)': '1', 'craps0(2)': '11', 'craps0(3)': '3', 'baccarat0': '10', 'roulette0': '8', 'blackjack0': '7', 'blackjack1': '9', 'blackjack2': '6', 'blackjack3': '2'}"
+Solution found for test_file_24
+"{'r-baccarat0': '7', 'r-blackjack0': '1', 'r-blackjack1': '1', 'r-blackjack2': '7', 'r-blackjack3': '7', 'r-roulette0': '1', 'craps0(0)': '0', 'craps0(1)': '10', 'craps0(2)': '5', 'craps0(3)': '9', 'baccarat0': '6', 'blackjack0': '2', 'blackjack1': '8', 'blackjack2': '4', 'blackjack3': '11', 'roulette0': '3'}"
+No solution found for test_file_25
+No solution found for test_file_26
+No solution found for test_file_27
+Solution found for test_file_28
+"{'r-baccarat0': '3', 'r-roulette0': '1', 'r-blackjack0': '1', 'r-blackjack1': '1', 'r-blackjack2': '3', 'r-blackjack3': '3', 'craps0(0)': '0', 'craps0(1)': '2', 'craps0(2)': '7', 'craps0(3)': '9', 'baccarat0': '6', 'roulette0': '4', 'blackjack0': '5', 'blackjack1': '8', 'blackjack2': '10', 'blackjack3': '11'}"
+No solution found for test_file_29
+No solution found for test_file_30
+No solution found for test_file_31
+No solution found for test_file_32
+No solution found for test_file_33
+No solution found for test_file_34
+Solution found for test_file_35
+"{'r-baccarat0': '6', 'r-roulette0': '1', 'r-blackjack0': '1', 'r-blackjack1': '1', 'r-blackjack2': '6', 'r-blackjack3': '6', 'craps0(0)': '2', 'craps0(1)': '4', 'craps0(2)': '7', 'craps0(3)': '8', 'baccarat0': '5', 'roulette0': '10', 'blackjack0': '3', 'blackjack1': '11', 'blackjack2': '0', 'blackjack3': '9'}"
+No solution found for test_file_36
+Solution found for test_file_37
+"{'r-roulette0': '7', 'r-baccarat0': '7', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '0', 'r-blackjack3': '7', 'craps0(0)': '2', 'craps0(1)': '4', 'craps0(2)': '5', 'craps0(3)': '8', 'roulette0': '3', 'baccarat0': '11', 'blackjack0': '1', 'blackjack1': '6', 'blackjack2': '10', 'blackjack3': '9'}"
+No solution found for test_file_38
+No solution found for test_file_39
+Solution found for test_file_40
+"{'r-baccarat0': '7', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '0', 'r-blackjack3': '7', 'r-roulette0': '7', 'craps0(0)': '11', 'craps0(1)': '3', 'craps0(2)': '4', 'craps0(3)': '8', 'baccarat0': '5', 'roulette0': '2', 'blackjack0': '10', 'blackjack1': '6', 'blackjack2': '9', 'blackjack3': '1'}"
+Solution found for test_file_41
+"{'r-baccarat0': '1', 'r-roulette0': '5', 'r-blackjack0': '1', 'r-blackjack1': '1', 'r-blackjack2': '5', 'r-blackjack3': '5', 'craps0(0)': '0', 'craps0(1)': '10', 'craps0(2)': '3', 'craps0(3)': '4', 'baccarat0': '2', 'blackjack0': '6', 'blackjack1': '7', 'blackjack2': '11', 'blackjack3': '8', 'roulette0': '9'}"
+No solution found for test_file_42
+No solution found for test_file_43
+No solution found for test_file_44
+No solution found for test_file_45
+No solution found for test_file_46
+No solution found for test_file_47
+Solution found for test_file_48
+"{'r-roulette0': '3', 'r-baccarat0': '0', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '3', 'r-blackjack3': '3', 'craps0(0)': '10', 'craps0(1)': '11', 'craps0(2)': '5', 'craps0(3)': '9', 'roulette0': '6', 'baccarat0': '8', 'blackjack0': '4', 'blackjack1': '1', 'blackjack2': '7', 'blackjack3': '2'}"
+No solution found for test_file_49
+No solution found for test_file_50
+No solution found for test_file_51
+No solution found for test_file_52
+No solution found for test_file_53
+No solution found for test_file_54
+Solution found for test_file_55
+"{'r-baccarat0': '0', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '8', 'r-blackjack3': '8', 'r-roulette0': '8', 'craps0(0)': '11', 'craps0(1)': '2', 'craps0(2)': '5', 'craps0(3)': '7', 'baccarat0': '4', 'roulette0': '6', 'blackjack0': '1', 'blackjack1': '3', 'blackjack2': '10', 'blackjack3': '9'}"
+No solution found for test_file_56
+Solution found for test_file_57
+"{'r-roulette0': '1', 'r-baccarat0': '1', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '0', 'r-blackjack3': '1', 'craps0(0)': '2', 'craps0(1)': '4', 'craps0(2)': '8', 'craps0(3)': '9', 'roulette0': '3', 'baccarat0': '10', 'blackjack0': '5', 'blackjack1': '7', 'blackjack2': '11', 'blackjack3': '6'}"
+No solution found for test_file_58
+No solution found for test_file_59
+Solution found for test_file_60
+"{'r-baccarat0': '1', 'r-roulette0': '3', 'r-blackjack0': '1', 'r-blackjack1': '1', 'r-blackjack2': '3', 'r-blackjack3': '3', 'craps0(0)': '4', 'craps0(1)': '5', 'craps0(2)': '6', 'craps0(3)': '7', 'baccarat0': '2', 'roulette0': '11', 'blackjack0': '9', 'blackjack1': '0', 'blackjack2': '10', 'blackjack3': '8'}"
+No solution found for test_file_61
+No solution found for test_file_62
+No solution found for test_file_63
+No solution found for test_file_64
+No solution found for test_file_65
+No solution found for test_file_66
+No solution found for test_file_67
+Solution found for test_file_68
+"{'r-baccarat0': '0', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '2', 'r-blackjack3': '2', 'r-roulette0': '2', 'craps0(0)': '3', 'craps0(1)': '5', 'craps0(2)': '7', 'craps0(3)': '8', 'roulette0': '1', 'baccarat0': '9', 'blackjack0': '4', 'blackjack1': '6', 'blackjack2': '10', 'blackjack3': '11'}"
+No solution found for test_file_69
+No solution found for test_file_70
+No solution found for test_file_71
+No solution found for test_file_72
+Solution found for test_file_73
+"{'r-baccarat0': '9', 'r-roulette0': '0', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '9', 'r-blackjack3': '9', 'craps0(0)': '10', 'craps0(1)': '3', 'craps0(2)': '4', 'craps0(3)': '6', 'baccarat0': '5', 'roulette0': '1', 'blackjack0': '11', 'blackjack1': '2', 'blackjack2': '7', 'blackjack3': '8'}"
+No solution found for test_file_74
+No solution found for test_file_75
+No solution found for test_file_76
+No solution found for test_file_77
+Solution found for test_file_78
+"{'r-roulette0': '3', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '0', 'r-blackjack3': '3', 'r-baccarat0': '3', 'craps0(0)': '11', 'craps0(1)': '2', 'craps0(2)': '5', 'craps0(3)': '8', 'roulette0': '10', 'baccarat0': '1', 'blackjack0': '4', 'blackjack1': '7', 'blackjack2': '9', 'blackjack3': '6'}"
+Solution found for test_file_79
+"{'r-roulette0': '4', 'r-baccarat0': '6', 'r-blackjack0': '4', 'r-blackjack1': '4', 'r-blackjack2': '6', 'r-blackjack3': '6', 'craps0(0)': '2', 'craps0(1)': '3', 'craps0(2)': '5', 'craps0(3)': '8', 'roulette0': '0', 'baccarat0': '1', 'blackjack0': '9', 'blackjack1': '10', 'blackjack2': '11', 'blackjack3': '7'}"
+No solution found for test_file_80
+No solution found for test_file_81
+No solution found for test_file_82
+No solution found for test_file_83
+Solution found for test_file_84
+"{'r-baccarat0': '1', 'r-roulette0': '3', 'r-blackjack0': '1', 'r-blackjack1': '1', 'r-blackjack2': '3', 'r-blackjack3': '3', 'craps0(0)': '0', 'craps0(1)': '2', 'craps0(2)': '4', 'craps0(3)': '5', 'baccarat0': '6', 'roulette0': '8', 'blackjack0': '9', 'blackjack1': '10', 'blackjack2': '7', 'blackjack3': '11'}"
+No solution found for test_file_85
+No solution found for test_file_86
+Solution found for test_file_87
+"{'r-baccarat0': '1', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '0', 'r-blackjack3': '1', 'r-roulette0': '1', 'craps0(0)': '2', 'craps0(1)': '3', 'craps0(2)': '4', 'craps0(3)': '7', 'baccarat0': '9', 'roulette0': '10', 'blackjack0': '5', 'blackjack1': '8', 'blackjack2': '11', 'blackjack3': '6'}"
+No solution found for test_file_88
+No solution found for test_file_89
+No solution found for test_file_90
+No solution found for test_file_91
+Solution found for test_file_92
+"{'r-baccarat0': '6', 'r-roulette0': '5', 'r-blackjack0': '5', 'r-blackjack1': '5', 'r-blackjack2': '6', 'r-blackjack3': '6', 'craps0(0)': '10', 'craps0(1)': '11', 'craps0(2)': '2', 'craps0(3)': '8', 'baccarat0': '7', 'roulette0': '0', 'blackjack0': '3', 'blackjack1': '1', 'blackjack2': '4', 'blackjack3': '9'}"
+No solution found for test_file_93
+No solution found for test_file_94
+Solution found for test_file_95
+"{'r-baccarat0': '4', 'r-roulette0': '0', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '4', 'r-blackjack3': '4', 'craps0(0)': '2', 'craps0(1)': '5', 'craps0(2)': '7', 'craps0(3)': '8', 'baccarat0': '11', 'roulette0': '9', 'blackjack0': '10', 'blackjack1': '1', 'blackjack2': '6', 'blackjack3': '3'}"
+No solution found for test_file_96
+Solution found for test_file_97
+"{'r-baccarat0': '2', 'r-roulette0': '4', 'r-blackjack0': '2', 'r-blackjack1': '2', 'r-blackjack2': '4', 'r-blackjack3': '4', 'craps0(0)': '10', 'craps0(1)': '3', 'craps0(2)': '6', 'craps0(3)': '7', 'baccarat0': '5', 'roulette0': '0', 'blackjack0': '8', 'blackjack1': '1', 'blackjack2': '11', 'blackjack3': '9'}"
+Solution found for test_file_98
+"{'r-baccarat0': '7', 'r-roulette0': '2', 'r-blackjack0': '2', 'r-blackjack1': '2', 'r-blackjack2': '7', 'r-blackjack3': '7', 'craps0(0)': '10', 'craps0(1)': '11', 'craps0(2)': '5', 'craps0(3)': '8', 'baccarat0': '1', 'roulette0': '0', 'blackjack0': '9', 'blackjack1': '3', 'blackjack2': '6', 'blackjack3': '4'}"
+Solution found for test_file_99
+"{'r-baccarat0': '8', 'r-roulette0': '0', 'r-blackjack0': '0', 'r-blackjack1': '0', 'r-blackjack2': '8', 'r-blackjack3': '8', 'craps0(0)': '2', 'craps0(1)': '4', 'craps0(2)': '5', 'craps0(3)': '9', 'baccarat0': '10', 'roulette0': '7', 'blackjack0': '3', 'blackjack1': '6', 'blackjack2': '11', 'blackjack3': '1'}"
+Total solutions found: 31/100

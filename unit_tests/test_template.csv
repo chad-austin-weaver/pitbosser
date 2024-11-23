@@ -1,0 +1,6 @@
+integer_max_relief_tables,game_type0,game_type1,...,gametypeN
+integer_#_of_tables_game_type0, integer_#_of_tables_game_type1,...,integer_#_of_tables_game_typeN
+dealer0_name,0-1,0-1,...,0-1 [1 representing this line's dealer knowing how to deal game_type0, 1, ... N in place. 0 representing that they do not.]
+dealer1_name,0-1,0-1,...,0-1
+...
+dealerM_name,0-1,0-1,...,0-1
