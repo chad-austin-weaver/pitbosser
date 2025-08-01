@@ -1,0 +1,192 @@
+Capstone Task II Software Design Doc
+Chad Weaver
+#010819487
+
+A.  Create a letter of transmittal and a project proposal to convince senior, nontechnical managers and executives to implement your data product approved in Task 1. The proposal should include each of the following:
+
+•   a summary of the problem
+My project addresses employee scheduling within the context of a table gaming department. The usual scheduling issues apply, but the additional constraints of individual dealer's game knowledge (or lack thereof) can make the creation of 'roadmaps' more difficult. The project implements a constraints satisfaction problem-solving algorithm to address the problem of employee scheduling.
+
+•   a description of how the data product benefits the customer and supports the decision-making process
+The data product supports the creation of a workable schedule (as assignments of representative dealer values to tables) for the involved staff of the client (scheduler, shift managers, and supervisors). It also helps to quickly handle arbitration in creating the schedules, preventing copy-pasting of typical roadmaps, pigeonholing dealers into limited roles, and tedious busywork done manually.
+
+•   an outline of the data product
+The data product is a user-friendly web app that takes input of dealers and tables as a .CSV feeds the input into a CSP algorithm and outputs solutions of assigned dealers to tables. It is deployed through Streamlit.io, and emphasizes usability and availability for laypersons.
+
+•   a description of the data that will be used to construct the data product
+The cited UNLV statewide report informs the decision-making algorithm by applying a default table games mix; it will also intake user data via .CSV files. I will create a method for generating randomized .CSV files given some input parameters for objective testing.
+
+•   the objectives and hypotheses of the project
+The product aims to reduce the time and complexity of the workload of casino schedulers. It seeks to produce a readable solution in the form of table-dealer assignments or make a readable error notice if a search cannot find a solution.
+
+The product hypothesizes that a CSP solver algorithm with the following variables, domains, and constraints will find a solution mirroring that of a real-world casino table games schedule where one exists.
+Variables: Casino table variables representing the casino's needs. One table variable and one relief variable for each non-craps table and four table variables for each craps table.
+Domains: Some set of values for each table representing dealers able to deal the table's game type.
+Constraints: 1. Constraints to ensure uniqueness amongst the dealer assigned to each table. 2. Constraints that cause the 'table' and 'relief' variables to be disjointed (that is, no 'table' assignment value may equal any 'relief' assigned value). 3. Constraints to ensure that the number of equal values amongst 'relief' variables does not exceed some maximum value set by the casino personnel.
+
+•   an outline of the project methodology
+The project will follow a Waterfall methodology. It is a relatively simple project with a tight scope. Given proper attention to detail in planning phases, a developer could implement each feature and test this project with relative certainty of the project's final accuracy.
+
+•   funding requirements
+The solution uses entirely free libraries, deployment, and IDEs. It can be wholly developed and hosted at the cost of the developer's time.
+
+•   the impact of the solution on stakeholders
+Stakeholders, in this case, being the client casino and its staff, the impact of this solution will be a reduction of labor costs in the form of time taken to create schedules, training of staff to produce schedules accurately, the avoidance of costly mistakes in schedules, and the opportunity cost of suboptimal roadmaps.
+
+•   ethical and legal considerations and precautions that will be used when working with and communicating about sensitive data
+The data used in the solution is either publicly available (the cited report), or stored locally on the users' side. Processing data will follow encryption protocols. The application will not store user data.
+
+•   your expertise relevant to the solution you propose
+In addition to being familiar with software solutions and data products, I have worked as a Table Games Dealer and supervisor for years. I have a keen understanding of both the functional requirements and organizational needs the project will be aiming to fulfill. Where my personal experience falls short, I can access a personal network of industry veterans.
+
+B.  Write an executive summary directed to IT professionals that addresses each of the following requirements:
+
+•   the decision support problem or opportunity you are solving for
+The proposed project solves the problem of assigning values (dealers) to variables (tables) based on organizational constraints. It aids in decision-making on behalf of schedulers, setting shift assignments for the dealers on their roster for the day. By assisting with the sometimes arbitrary assignment of dealers to one of their many known games, my application replaces ongoing complex problem-solving with maintaining a stored list of dealers and their known games.
+
+•   a description of the customers and why this product will fulfill their needs
+Shift managers, schedulers, and supervisors must draw up schedules multiple times each workday. The CSP solver solution is easy and quick to adopt and use daily. It will make arbitrary decisions reasonably and without mistakes.
+
+•   existing gaps in the data products you are replacing or modifying (if applicable) 
+Though applications for this particular problem exist, discovery regarding them proved difficult. Many casino-oriented schedulers exist (Casino Schedule Ease, for instance.) However, the cases I encountered were typically costly upfront, required a formal application with casino credentials to initiate free trials, and held the back-end problem-solving components secret as they were proprietary information. 
+Instead of committing fraud to obtain a 2-week free trial to intuit a few key back-end algorithms and their weaknesses, I instead conducted a personal interview with both my direct manager (Seligman) and director of table games (Wardle) at my current place of employment (Circa Resort & Casino Las Vegas) to gather information and requirements. Between the two of them, I learned that these software applications (that they had encountered in their decades of industry experience) typically A. came as a package deal with an entirely non-negotiable and monolithic Scheduling/Payroll/CRM/Database structure attached at quite a cost and B. Typically had exponentially large solve times (as should be expected, given the nature of the problem). My director told me he had worked in scenarios where the application's end-user would "leave the software running for hours, sometimes all night, but it would always produce a schedule once finished." (Wardle) in scenarios of 200+ dealers and numerous game types. So, without having seen the competition directly and having researched the computational limits of optimizations of CSP solvers, breaking the monolithic pay structure would be the first prominent area to improve upon. I set out to create a proof-of-concept that could solve the same problem (although far less optimized) to glean appraisal for the viability of a more modular solution, perhaps one that specialized in solving this particularly nasty task decently well, which could lead to a later product interfacing with existing CRM software (Salesforce, Pipedrive, and the like).
+
+•   the data available or the data that needs to be collected to support the data product lifecycle
+The data from the statewide report is publicly available and updated yearly. The data input from businesses for their needs can be saved as a .CSV and imported instantly for everyday use.
+
+•   the methodology you use to guide and support the data product design and development
+The Waterfall methodology guided the design and development of this product by ensuring that the solution, in the design phase, fulfills all actual needs before implementation so that the project remains focused and easily achievable within its scope and timeframe.
+
+•   deliverables associated with the design and development of the data product
+Deliverables for the data product include a software design document outlining the environments and goals of the product and a deployed web app allowing end-users to input data, access the decision-making process of the product, and receive the output of a found solution where one exists.
+
+•   the plan for implementation of your data product, including the anticipated outcomes from this development
+The data product uses Python3. First, I will implement the classes for representing tables, dealers, and casinos, followed by the solution and possible constraints. The product's build and accuracy will be tested locally (PyCharm Community Edition 2022 hosted on a Windows 11 personal computer). The final source code will be deployed via Streamlit.io, where its end-users will access it.
+
+•   the methods for validating and verifying that the developed data product meets the requirements and, subsequently, the needs of the customers
+The project uses a Test-Driven design. During the planning and design phase of the project. I will create numerous 'manual' unit tests and their expected results based on organizational needs. Then, I will compare these tests against the actual implementation results (using the test's original values as input) to ensure the program behaves as expected to meet those organizational needs. The python-constraint library contains a method that returns all possible solutions of a given problem; once the implementation returns all valid solutions for relatively small test cases (solvable "by hand"), it will be safe to assume that the build is prescribing only valid responses without pruning any erroneously.
+
+•   the programming environments and any related costs, as well as the human resources that are necessary to execute each phase in the development of the data product
+The project's design and requirements gathering phases will take approximately 40 developer hours, implementation and testing approximately 160, and documentation 40. On the user end, the solution will be simple enough to navigate without explicit training, though up to an hour to introduce an employee to the system should be accounted for. In a large enough casino, ~40 hours of data entry to initialize stored CSVs for each shift could be time-saving for on-floor staff.
+
+•   a projected timeline, including milestones, start and end dates, duration for each milestone, dependencies, and resources assigned to each task
+1. Collection of requirements. 10-07-2024 to 10-14-2024.
+2. Design of solution and tests. 10-15-2024 to 10-21-2024.
+3. Development of solution and tests. 10-22-2024 to 11-16-2024.
+4. Testing. 11-17-2024 to 11-23-2024.
+5. Introduction to end-users, collection of feedback. 11-23-2024 to 11-30-2024.
+
+ 
+
+C.  Design and develop your fully functional data product that addresses your identified business problem or organizational need from part A. Include each of the following attributes, as they are the minimum required elements for the product:
+
+•   one descriptive method and one nondescriptive (predictive or prescriptive) method
+
+•   collected or available datasets
+
+•   decision support functionality
+
+•   ability to support featurizing, parsing, cleaning, and wrangling datasets
+
+•   methods and algorithms supporting data exploration and preparation
+
+•   data visualization functionalities for data exploration and inspection
+
+•   implementation of interactive queries
+
+•   implementation of machine-learning methods and algorithms
+
+•   functionalities to evaluate the accuracy of the data product
+
+•   industry-appropriate security features
+
+•   tools to monitor and maintain the product
+
+•   a user-friendly, functional dashboard that includes three visualization types
+
+D.  Create each of the following forms of documentation for the product you have developed:
+
+•   a business vision or business requirements document
+1. Executive Summary
+The project aims to develop a straightforward, intuitive web application to solve the organizational need of assigning table game dealers to tables in a casino. It seeks to prescribe assignments on behalf of casino management personnel, utilizing a CSP-solving algorithm. CSP algorithms can become computationally complex but otherwise easy to develop, implement, and query. The resulting project will be worthwhile as proof-of-concept and in scenarios where the computational time is justified over the labor cost and redundancy of manually assigning scheduled employees.
+
+2. Project Objectives
+The project objectives are to design, create, and test a web application that accurately assigns representations of table-game dealers to tables of some given schedule. The web application's implemented solver should be able to produce all existing acceptable solutions to a given problem (given proper parameters and sufficient time to explore the solution space fully). It should maintain accuracy at any given level of complexity and should not yield any inaccurate solution.
+
+3. Project Scope
+The project follows a Waterfall development method. The developer(s) must design a solution first, implement that design, and then test and assess it for accuracy. The project aims to prove the concept of a usable, accessible app containing an interface to an accurate solver. Any further iterations of the project will fall outside the initial scope and constitute another separate project with its objectives.
+
+4. Business Requirements
+The project aims to solve the organizational scheduling needs, particularly for a table games department within a casino. It must ensure that dealers are distinctly assigned to specific tables (and not relieving multiple tables), that each table is assigned its requisite number of dealers (whether assigned to that table or relieving the dealer who is), that dealers work only some set number of rotations before receiving a break, and that no dealer assigned a table also relieve any other table. 
+
+5. Key Stakeholders
+The project's key stakeholders are namely the clientele (casino) and its personnel. The table games department's management (directors, schedulers, managers, supervisors, and executives) will interface with the finished project. This interaction involves storing and maintaining the .csv files appropriately and training to ensure the system accurately models and solves their real-world organizational needs.
+
+6. Project constraints
+Given the feasibility (or lack thereof) of modeling such a naturally, mathematically complicated problem, the most significant constraint for this project is the computational time. Given the low cost, ease-of-use, and independent development of this project as a student proof-of-concept, the tool, once finished, would only be constrained if adopted by some organizations based on processing time and associated cost. These are essential factors, given the approximate size of both varied game types and the number of dealers for a shift in a large casino.
+
+7. Cost-benefit analysis
+However, this would still be a point of comparison for the client. A single dedicated computer humming away is costly and time-consuming for some casual at-home users. However, compared to the time and cost associated with the manual creation of a complex roadmap and the labor cost to cover the specialized worker assigned the task, said comparison may be worth considering.
+
+•   raw and cleaned datasets with the code and executable files used to scrape and clean data (if applicable)
+N/A
+
+•   code used to perform the analysis of the data and construct a descriptive, predictive, or prescriptive data product
+The load_casino() function included in the file casino.py of the attached source code analyses user data to construct the variables and domains for the prescriptive process of the data product.
+The streamlit_app.py file contains call methods from the casino.py, constraintfunctions.py, and visualizations.py files to intake data from both the user-given data contained in an uploaded .CSV file as well as from the data gathered from the seminal strip games mix report from UNLV (cited below) to construct a predictive method to solve the organizational need sought after by the prescriptive data product. It also generates visual aides for the resulting prescription and comparisons from the resulting table games mix to the theoretical percentages based on said report.
+
+•   assessment of the hypotheses for acceptance or rejection
+The hypothesis that a program with the previously mentioned variables, domains, and constraints would be able to solve the real-world problem of table games scheduling assignments is acceptable. By utilizing the python-constraint library's solutions function, I could confirm that, given sufficient time, my program found all possible solutions to a given problem. Then, manually verifying the validity of solutions given for issues of increased complexity confirmed that the solver retains accuracy given increased complexity. By combining the discovery that the implementation can A. Find all given solutions to a simple problem given sufficient time, and B. It does not introduce inaccuracies with increases in problem complexity; it is safe to assume that these statements hold for problems of any given complexity and thus will find a solution given one exists in some amount of time.
+
+•   visualizations and elements of effective storytelling supporting the data exploration and preparation, data analysis, and data summary, including the phenomenon and its detection
+1. The schedule table is displayed upon application finding a solution in the web app. The table | dealer assignments are demonstrated in the graph.
+2&3. Expected and actual game mix based on cited report displayed upon application finding a solution in the web app.
+4. Bar chart mapping solutions found of 100 generated cases at 10% increments (using 3 max relief tables, 12 dealers, [blackjack, baccarat, craps, roulette], unassigned tables.) I chose these parameters as they form a neat microcosm of the intended behaviors of the prescriptive method while keeping the computational time minimal. The resulting logic will 1. Create or neglect the creation of a dice table initially based on dealers' ability to deal with it. 2. Create sufficient tables of varied and same types to require decisions about which dealer relieves which tables. 3. Mimics is a problematic situation that requires a maximum number of tables given the dealers available. The resulting ratios of found solutions out of 100 provide meaningful insight. Given that the typical real-world casino will hire preferentially for employees who deal with their game types, a fully randomized game types matrix demonstrates a 'floor ' of expected ability to find solutions given approximate game knowledge. 
+
+•   assessment of the product’s accuracy 
+As mentioned in the section 'assessment of the hypotheses for acceptance or rejection,' the implementation can find existing solutions with total accuracy where one exists and is given sufficient time. However, the nature of CSPs is one of incredible combinatorial complexity. Combined with the innate complexity of the real-world constraints for these problems, assignment space (and the time to explore it) quickly becomes unyieldingly large. This complexity significantly limits the real-world applicability of my project in its current state. To achieve commercial viability, I must explore further optimizations and different tech-stack options for this project. Given the limited scope and approach of the project, the results will remain satisfactory as a valid proof of concept.
+
+•   the results from the data product testing, revisions, and optimization based on the provided plans, including screenshots
+Many revisions and optimizations took place during the testing of the resulting solution. One such optimization was the addition of a wholly unnecessary constraint demanding that assignments of any given craps table sort by value. This constraint does not affect the solution's accuracy but significantly reduces wasteful, redundant solutions of every given permutation of any four dealers assigned to a single dice table. By introducing the constraint, the search space and number of possible solutions prune away by a factor of C(n*m, 4) wherein n = number of craps tables in solution, m = number of viable dealers assignable to craps tables in acceptable solutions.
+
+•   source code and executable file(s)
+See attached .zip file.
+
+•   a quick-start guide summarizing the steps necessary to install and use the product
+1. Visit pitbosser.streamlit.app in browser.
+2. Upload .csv file of your own (formatting noted below) or use one of the user_test folder's many files included in the attached .zip folder. (For evaluation purposes, given the combinatorial complexity of the problem, keep the number of games and dealers minimal, around 3-5 game types and 9-12 dealers for a result to be found without significant computational time).
+3. Scroll down as the streamlit web app populates with a generated table of assignments, and charts for comparison to that of the average games in the report.
+
+CSV format:
+integer_max_relief_tables,game_type0,game_type1,...,gametypeN
+integer_#_of_tables_game_type0, integer_#_of_tables_game_type1,...,integer_#_of_tables_game_typeN
+dealer0_name,0-1,0-1,...,0-1 [1 representing this line's dealer knowing how to deal game_type0, 1, ... N in place. 0 representing that they do not.]
+dealer1_name,0-1,0-1,...,0-1
+...
+dealerM_name,0-1,0-1,...,0-1
+
+[NOTE: In industry, a "integer_max_relief_tables" value outside of [3-4] would be exceedingly rare.]
+[NOTE: The second line will be 'offset' by one left from the corresponding game_types, and leave an empty space in the right-most 'cell' this is okay and handled during processing.]
+[NOTE: Given all 0 values in line 2, the default strip game mix will be assigned]
+
+[Currently accepted game_types: blackjack, craps, roulette, 3-card poker, baccarat, mini-baccarat, let it ride, pai gow, pai gow poker, other]
+
+Example:
+3,blackjack,roulette,craps,baccarat,other |	[3 relief tables max per dealer, game types are [blackjack,roulette,craps,baccarat,other]]
+1,1,1,1,0 				  |	[1 blackjack, 1 roulette, 1 craps, 1 baccarat, 0 other tables.]
+"d0",1,0,0,0,0 				  |	[dealer d0 knows blackjack.]
+"d1",0,0,1,1,1				  |	[dealer d1 knows craps, baccarat, other.]
+"d2",0,0,1,0,0				  |	...
+"d3",0,1,1,1,0				  |
+"d4",0,1,0,0,0				  |
+"d5",0,0,1,0,0				  |
+"d6",1,1,0,1,0				  |
+"d7",1,1,1,1,1				  |	[dealer d7 knows blackjack, roulette, craps, baccarat, other.]
+
+
+Citations:
+Nevada David G. Schwartz and Courtney Nickson. Las Vegas Strip Statewide Table Game Mix: The Evolution of
+Casino Games, 1985-2023. Las Vegas: Center for Gaming Research, University Libraries, University
+of Nevada Las Vegas, 2024.
+"Seligman, Benjamin. Personal interview. 9 Oct. 2024."
+"Wardle, Joe. Personal interview. 9 Oct. 2024".
