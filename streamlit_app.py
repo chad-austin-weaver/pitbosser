@@ -7,17 +7,9 @@ import pandas as pd
 import testgen
 import visualizations
 
-# TODO: 3. Bar charts of test data from hypothesis-based experiments.
-# TODO: Implement streamlit.io .CSV creator/exporter.
-
-# TODO: Set dealer IDs for comparisons speed-up.
-# TODO: Clean-up visuals (condense/merge (table, r-table), crap tables on schedule, color/sort pie chart wedges)
-
 def relief_constraint(*assignments):
-    #Count times each dealer assigned
     dealer_count = {dealer: assignments.count(dealer.getName()) for dealer in testCasino.getDealers()}
 
-    #Ensure no dealer is assigned more than n positions
     return all(count <= testCasino.getMaxReliefTables() for dealer, count in dealer_count.items())
 
 error_message = "Error! Check your input file.\nNot sure what's wrong? Check the Quickstart Guide."
@@ -38,8 +30,7 @@ if upload_file:
         constraintfunction.disjoint_sets(problem, testCasino.tableVars, testCasino.reliefVars)
         problem.addConstraint(relief_constraint, testCasino.reliefVars)
         solution = problem.getSolution()
-        
-    #TODO: Add link to Quickstart Guide.
+
     except TypeError:
         st.write(error_message)
     except KeyError:
